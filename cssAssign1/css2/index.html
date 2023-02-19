@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Various CSS properties</h1>
+    <h2>Display Property</h2>
+    <h3>1.Block</h3>
+    <p>span is inline element we will make it<span id="block">block</span></p>
+    <h3>2.Inline-block</h3>
+    <p>li is block-level element we will make it inline.</p>
+    <ul class="inline">
+        <li>Home</li>
+        <li>Info</li>
+    </ul>
+    <hr>
+    <h2> Display and Visibility</h2>
+    <h3>1.Display:none</h3>
+    <h3>This heading is visible</h3>
+    <h3 id="hide">This is a hidden heading</h3>
+    <p>The hidden heading does not take up space even after hiding it since we have used display:none;</p>
+     <h3>2.Visibility:hidden</h3>
+     <h3 >This heading is visible</h3>
+      <h3 id="vhide">This is a hidden heading</h3>
+      <p>The hidden heading takes up space even after hiding it.</p>
+   <hr>
+   <h2>Positioning Property</h2>
+   <h3>1.static</h3>
+   <p>Static property goes with the normal flow of the page.Properties like left,right,top,bottom and z-index do not affect an element with position:static</p>
+   <div class="root">
+    <div class="child">
+        I am a child element.
+    </div>
+    
+    <div id="main1">
+        I am the main element on which property will be applied.
+    </div>
+    
+    <div class="child">
+        I am a child element.
+    </div>
+   </div>
+   <h3>2.relative</h3>
+   <p>Relative property also goes with the normal flow of the page.Properties like left,right,top,bottom and z-index affect an element with position:relative as shown in the output.</p>
+   <div class="root">
+   <div class="root">
+    <div class="child">
+        I am a child element.
+    </div>
+    
+    <div id="main2">
+        I am the main element on which property will be applied.
+    </div>
+    
+    <div class="child">
+        I am a child element.
+    </div>
+   </div>
+   <h3>3.absolute</h3>
+   <p>Absolute property does not go with the normal flow of the page.Properties like left,right,top,bottom and z-index determine the final position of an element with position:absolute. With this property element is positioned relative to its closest positioned ancestor other that element having position:static</p>
+   <div id="root">
+    <div class="child">
+        I am a child element.
+    </div>
+    
+    <div id="main3">
+        I am the main element on which property will be applied.
+    </div>
+    
+    <div class="child">
+        I am a child element.
+    </div>
+   </div>
+   <h3>4.Fixed</h3>
+   <p>Fixed property also does not go with the normal flow of the page.Properties like left,right,top,bottom and z-index determine the final position of an element with position:fixed. With this property element is positioned relative to its html element.They are not affected by scrolling.</p>
+   <div id="root">
+    <div class="child">
+        I am a child element.
+    </div>
+    
+    <div id="main4">
+        I am the main element on which property will be applied.
+    </div>
+    
+    <div class="child">
+        I am a child element.
+    </div>
+   </div>
+   <hr>
+   <h2>Float property</h2>
+   <p id="fl">This element float to left</p>
+   <p id="fr">This element float to right</p>
+</body>
+</html>

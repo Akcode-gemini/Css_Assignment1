@@ -1,0 +1,65 @@
+#block{
+    display: block;
+    background-color: yellow;
+}
+.inline li{
+    display: inline-block;
+    font-size: 20px;
+    background-color: aqua;
+    margin:0 0 0 20px;
+}
+#hide{
+    display:none;
+}
+#vhide{
+    visibility: hidden;
+}
+#main1{
+    position: static;
+    left: 20px;
+    bottom: 20px;
+    background-color:aquamarine;
+    padding: 10px;
+}
+#main2{
+        position:relative;
+        left: 10px;
+        bottom: 10px;
+        background-color:aquamarine;
+        padding:10px;
+    
+}
+#main3{
+    position:absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color:aquamarine;
+    padding:10px;
+
+}
+#main4{
+    position:fixed;
+    left: 10px;
+    bottom: 10px;
+    background-color:aquamarine;
+    padding:10px;
+
+}
+#root{
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    background-color: yellow;
+}
+.child{
+    padding: 10px;
+}
+#fl{
+    float:left;
+    background-color: yellow;
+
+}
+#fr{
+    float:right;
+    background-color: aqua;
+}
